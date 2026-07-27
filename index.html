@@ -110,15 +110,18 @@
     <h3>On-Device Storage Only</h3>
     <p>
       Every number you enter into CanFIRE — expenses, income, assets, insurance policies,
-      and personal details — is stored exclusively on your device using encrypted local storage
-      (AsyncStorage). There is no cloud sync, no account creation, and no backend server.
+      and personal details — is stored <strong>only on your device</strong>, in the app's private
+      storage area, protected by your device's own security (your passcode or biometric lock and
+      the operating system's built-in device encryption). There is no cloud sync, no account
+      creation, and no backend server.
     </p>
 
     <h3>No Internet Required</h3>
     <p>
-      CanFIRE works fully offline. The only optional network call is a once-weekly fetch of
-      updated CPF reference figures (BRS/FRS/ERS) from a public data source. If you are
-      offline, the app falls back to bundled figures. No personal data is involved in this request.
+      CanFIRE works fully offline. Apart from subscription management (RevenueCat, described
+      below), the only other network call is a once-weekly fetch of updated CPF reference
+      figures (BRS/FRS/ERS) from a public data source. If you are offline, the app falls back
+      to bundled figures. No personal data is involved in the CPF fetch.
     </p>
 
     <h3>Data Portability</h3>
@@ -137,7 +140,13 @@
     </div>
     <p>
       CanFIRE does not collect usage analytics, crash reports, advertising identifiers, or
-      any telemetry. Your personal financial data is never transmitted to any server.
+      any telemetry. There is no advertising in the app, and we do not track you across other
+      apps or websites. Your personal financial data is never transmitted to any server.
+    </p>
+    <p>
+      The only data that leaves your device is the subscription information handled by
+      RevenueCat, Apple, and Google, described in the next section. That data does not include
+      anything you enter into the app.
     </p>
     <p>
       No personally identifiable financial information is ever transmitted from your device
@@ -154,18 +163,19 @@
     <h3>RevenueCat (Subscription Management)</h3>
     <p>
       CanFIRE uses <strong>RevenueCat</strong> to manage in-app subscriptions (Pro plan).
-      When you interact with subscription features, RevenueCat may collect:
-      a device-level anonymous identifier, purchase transaction data (product ID, price,
-      currency, transaction date, and app store receipt data), and platform and app version
-      metadata.
+      The RevenueCat SDK initialises each time the app starts, so for <strong>every
+      user</strong> — subscriber or not — it collects and transmits: a device-level
+      anonymous identifier, IP address, and platform/app-version metadata. If you
+      subscribe, it additionally processes purchase transaction data (product ID, price,
+      currency, transaction date, and app store receipt data).
     </p>
     <p>
-      This data is transmitted to RevenueCat's servers in the United States and is used
-      solely for subscription validation and management. RevenueCat does not receive any of
-      your personal financial data entered into CanFIRE.
+      This data is transmitted to RevenueCat's servers in the United States under standard
+      data processing agreements and is used solely for subscription validation and
+      management. RevenueCat does not receive any of your personal financial data entered
+      into CanFIRE — your plans, logs, assets, and CPF figures never leave your device.
     </p>
     <p>
-      If you do not subscribe or interact with the Pro paywall, no data is sent to RevenueCat.
       For details on RevenueCat's data practices, see their
       <a href="https://www.revenuecat.com/privacy" target="_blank">Privacy Policy</a>.
     </p>
@@ -197,7 +207,7 @@
       CanFIRE is a personal retirement planning calculator. It is <strong>not a licensed
       financial adviser</strong>, and nothing in this app constitutes financial advice,
       investment advice, or any form of regulated financial advisory service under the
-      Financial Advisers Act (Cap. 110) or the Securities and Futures Act (Cap. 289) of Singapore.
+      Financial Advisers Act 2001 or the Securities and Futures Act 2001 of Singapore.
     </p>
     <p>
       All projections, estimates, and insights are based solely on the information you enter.
@@ -207,10 +217,12 @@
 
     <h3>CPF &amp; Government Data</h3>
     <p>
-      Retirement sums (BRS/FRS/ERS) and CPF LIFE payout estimates are sourced from
-      <a href="https://www.cpf.gov.sg" target="_blank">cpf.gov.sg</a> and updated periodically.
-      Figures are for planning purposes only and may not reflect your actual CPF balances or
-      entitlements. Please refer to cpf.gov.sg or your CPF statement for authoritative figures.
+      Retirement sums (BRS/FRS/ERS) are taken from publicly published CPF Board figures and
+      updated periodically. CPF LIFE payout figures shown in the app are CanFIRE's own estimate
+      derived from CPF Board's published Standard Plan ranges — they are not CPF Board figures.
+      All figures are for planning purposes only and may not reflect your actual CPF balances or
+      entitlements. Please refer to <a href="https://www.cpf.gov.sg" target="_blank">cpf.gov.sg</a>
+      or your CPF statement for authoritative figures.
     </p>
     <p>
       This app references publicly available CPF Board figures solely for planning purposes.
@@ -229,7 +241,28 @@
     <h3>No Affiliation</h3>
     <p>
       CanFIRE is an independent tool and is not affiliated with, endorsed by, or connected to
-      CPF Board, any government body, financial institution, insurer, or investment product provider.
+      CPF Board, the Monetary Authority of Singapore, any government body, financial institution,
+      insurer, or investment product provider.
+    </p>
+  </div>
+
+  <!-- Data retention & deletion -->
+  <div class="card">
+    <div class="card-header">
+      <span class="icon">🗑️</span>
+      <h2>Data Retention &amp; Deletion</h2>
+    </div>
+    <p>
+      All CanFIRE data lives only on your device, for as long as the app is installed.
+      You can delete individual entries at any time, or remove everything at once with
+      <strong>Settings → Clear All Data</strong>. Uninstalling the app also deletes all
+      locally stored data. Encrypted <code>.canfire</code> backup files you export are
+      under your control — delete them from wherever you stored them.
+    </p>
+    <p>
+      Subscription records held by Apple, Google, and RevenueCat are retained under
+      their respective policies; contact them (or us) to exercise your rights over
+      that data.
     </p>
   </div>
 
@@ -240,7 +273,7 @@
       <h2>Contact</h2>
     </div>
     <p>
-      For questions about this privacy policy, contact:
+      For questions about this privacy policy or any personal-data enquiry, contact:
       <strong><a href="mailto:hello@canfire.app">hello@canfire.app</a></strong>
     </p>
   </div>
@@ -248,7 +281,7 @@
 </main>
 
 <footer>
-  <p>Last updated: July 2026 &nbsp;·&nbsp; CanFIRE v1.0.33</p>
+  <p>Last updated: July 2026 &nbsp;·&nbsp; CanFIRE v1.0.42</p>
   <p style="margin-top:6px"><a href="https://github.com">Hosted on GitHub Pages</a></p>
 </footer>
 
