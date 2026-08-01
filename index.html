@@ -4,9 +4,9 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>CanFIRE — Privacy Policy</title>
-<meta name="description" content="CanFIRE privacy policy. Your financial data stays on your device. CanFIRE is an independent planning tool, not affiliated with CPF Board or MAS." />
+<meta name="description" content="CanFIRE Privacy Policy. Your financial data stays on your device — no servers, no accounts, no analytics. Published by Tong Wee Seng (DS-Lab), Singapore." />
 <meta property="og:title" content="CanFIRE — Privacy Policy" />
-<meta property="og:description" content="Your financial data stays on your device. CanFIRE is an independent planning tool and is not affiliated with CPF Board, MAS, or any government body." />
+<meta property="og:description" content="Your financial data is stored only on your device. CanFIRE has no servers and no accounts, and never transmits what you enter." />
 <meta property="og:type" content="website" />
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -48,9 +48,7 @@ align-items: center;
 gap: 10px;
 margin-bottom: 16px;
 }
-.card-header .icon {
-font-size: 1.3rem;
-}
+.card-header .icon { font-size: 1.3rem; }
 .card-header h2 {
 font-size: 1rem;
 font-weight: 700;
@@ -70,6 +68,12 @@ h3:first-of-type { margin-top: 0; }
 p { font-size: 0.9rem; color: #4b5563; margin-bottom: 10px; }
 strong { color: #1a1a2e; }
 a { color: #1B3A6B; }
+code {
+background: #eef2ff;
+padding: 1px 5px;
+border-radius: 4px;
+font-size: 0.85em;
+}
 
 .highlight {
 background: #eef2ff;
@@ -78,15 +82,13 @@ border-radius: 0 8px 8px 0;
 padding: 14px 18px;
 margin-bottom: 16px;
 font-size: 0.9rem;
-color: #1B3A6B;
-font-weight: 600;
 }
 
 footer {
 text-align: center;
 font-size: 0.8rem;
 color: #6b7280;
-padding-bottom: 40px;
+padding: 0 20px 40px;
 }
 footer a { color: #1B3A6B; text-decoration: none; }
 footer .links { margin-bottom: 10px; }
@@ -96,20 +98,18 @@ footer .links a { margin: 0 8px; font-weight: 600; }
 <body>
 
 <header>
-<h1>CanFIRE</h1>
+<h1>CANFIRE</h1>
 <p>Privacy Policy &amp; Disclaimers</p>
 </header>
 
 <main>
 
 <div class="highlight">
-Every figure you enter into CanFIRE stays on your device. There is no account, no cloud sync,
-and no backend server holding your financial data. The only information that leaves your device
-is the subscription data described in this policy, and a weekly request for public CPF reference
-figures — neither of which includes anything you enter into the app.
+All the financial data you enter is stored only on your device and is never transmitted
+anywhere. CanFIRE has no servers and no accounts. The only data that leaves your device is
+the subscription-related data described in this policy.
 </div>
 
-<!-- Who we are -->
 <div class="card">
 <div class="card-header">
 <span class="icon">🧭</span>
@@ -117,76 +117,85 @@ figures — neither of which includes anything you enter into the app.
 </div>
 <p>
 CanFIRE is published and operated by <strong>Tong Wee Seng (DS-Lab)</strong>, Singapore,
-who is the data controller for the limited personal data
-described in this policy.
-</p>
-<p>
-For any privacy question, access request or correction request, contact
+who is the data controller for the limited personal data described in this policy.
+For any privacy question or request, contact
 <strong><a href="mailto:hello@canfire.app">hello@canfire.app</a></strong>.
 </p>
 <p>
-Because CanFIRE has no servers and no accounts, we hold almost no data about you. Everything
-you enter into the app stays on your device and is never accessible to us.
+Because CanFIRE has no servers and no accounts, we hold almost no data about you. The only
+personal data processed on our behalf is the subscription information handled by RevenueCat,
+Apple, and Google, described below. Everything you enter into the app stays on your device
+and is never accessible to us.
 </p>
 </div>
 
-<!-- Data Privacy -->
 <div class="card">
 <div class="card-header">
 <span class="icon">🔒</span>
-<h2>Your Data Never Leaves Your Phone</h2>
+<h2>Your Financial Data Stays on Your Device</h2>
 </div>
 
 <h3>On-Device Storage Only</h3>
 <p>
-Every number you enter into CanFIRE — expenses, income, assets, insurance policies,
-and personal details — is stored <strong>only on your device</strong>, in the app's private
-storage area, protected by your device's own security (your passcode or biometric lock and
-the operating system's built-in device encryption). There is no cloud sync, no account
-creation, and no backend server.
+Your expenses, income, assets, insurance details, and personal settings are stored
+locally on your device, in the app's private storage area, and are not uploaded to any
+server. That storage is protected by your device's own security — your passcode or
+biometric lock and the operating system's built-in device encryption. There is no cloud
+sync, no account creation, and no backend server. CanFIRE does not transmit your
+financial data to any third party.
 </p>
 
-<h3>Works Offline — With One Weekly Update</h3>
+<h3>Receipt Photos (Camera &amp; Photo Library)</h3>
 <p>
-CanFIRE works fully offline. It makes only two kinds of network connection: subscription
-management via RevenueCat (described below), and a once-weekly request for updated CPF
-reference figures (BRS/FRS/ERS). If you are offline, the app falls back to bundled figures.
+You can optionally attach a receipt image to a spending entry, using your camera or photo
+library. The app requests camera and photo permissions <strong>only for this purpose</strong>,
+and only when you initiate it. Receipt images are stored on your device alongside your other
+CanFIRE data and are never uploaded, analysed, or shared. If you never attach a receipt,
+these permissions are never used.
 </p>
+
+<h3>CPF Reference Figures</h3>
 <p>
-The CPF reference file is <strong>hosted publicly on GitHub</strong>, not on a server we
-operate. <strong>No data you enter into the app is included in that request.</strong> As with
-any web request, GitHub receives your device's IP address in order to serve the file — we do
-not receive, see, or store it. GitHub's handling of that information is governed by its own
-<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">privacy statement</a>.
+Once a week, CanFIRE requests publicly available CPF reference figures (BRS, FRS, ERS, and
+interest rates) from a small file hosted publicly on GitHub. <strong>No data you enter into
+the app is included in that request.</strong> As with any web request, GitHub receives your
+device's IP address in order to serve the file — we do not receive, see, or store it. If you
+are offline, the app falls back to figures bundled with the app.
 </p>
 
 <h3>Data Portability</h3>
 <p>
-To transfer your data to another device, use the <strong>Export / Restore</strong> feature
-in Settings. This creates an AES-256 encrypted <code>.canfire</code> backup file that only
-you control. The file is never uploaded or shared automatically.
+To move your data to another device, use the <strong>Export / Restore</strong> feature in
+Settings. This creates a password-protected, AES-256 encrypted <code>.canfire</code> backup
+file that only you control. The file is never uploaded or shared automatically, and we cannot
+recover it or its password for you.
+</p>
+
+<h3>Your Control</h3>
+<p>
+You are in full control of your financial data. Edit or delete any entry directly within the
+app. To remove everything at once, use <strong>Settings → Clear All Data</strong>, or uninstall
+the app.
 </p>
 </div>
 
-<!-- No Tracking -->
 <div class="card">
 <div class="card-header">
 <span class="icon">🚫</span>
-<h2>No Tracking, No Analytics</h2>
+<h2>No Financial Tracking</h2>
 </div>
 <p>
-CanFIRE does not collect usage analytics, crash reports, advertising identifiers, or
-any telemetry. There is no advertising in the app, and we do not track you across other
-apps or websites. Your personal financial data is never transmitted to any server.
+CanFIRE does not collect usage analytics or financial telemetry. There is no advertising in
+the app, and we do not track you across other apps or websites. Your financial information is
+never uploaded to any server, including ours.
 </p>
 <p>
-The only data that leaves your device is the subscription information handled by
-RevenueCat, Apple, and Google, described in the next section, and the weekly CPF reference
-request described above. Neither includes anything you enter into the app.
+Standard device and transaction identifiers may be processed by Apple, Google, or our payment
+provider as part of subscription management, as described below. None of the financial data
+you enter — income, expenses, assets, or insurance — is shared with these parties.
 </p>
 </div>
 
-<!-- Third-Party Services -->
 <div class="card">
 <div class="card-header">
 <span class="icon">🔗</span>
@@ -195,23 +204,23 @@ request described above. Neither includes anything you enter into the app.
 
 <h3>RevenueCat (Subscription Management)</h3>
 <p>
-CanFIRE uses <strong>RevenueCat</strong> to manage in-app subscriptions (Pro plan).
-The RevenueCat SDK initialises each time the app starts, so for <strong>every
-user</strong> — subscriber or not — it collects and transmits: a randomly generated
-device identifier, app version, device type and model, operating system and version,
-and IP address (used by RevenueCat for fraud prevention and receipt validation). If you
-subscribe, it additionally processes purchase transaction data (product ID, transaction ID,
-price, currency, purchase date, subscription status, and app store receipt data).
+CanFIRE uses <strong>RevenueCat</strong>, a third-party subscription management SDK, to
+process Pro upgrades and restore purchases. To provide this service, RevenueCat may collect
+and process: a randomly generated device identifier, app version, device type and model,
+operating system and version, IP address (used by RevenueCat for fraud prevention and receipt
+validation), and purchase transaction data (product ID, transaction ID, purchase date, and
+subscription status).
 </p>
 <p>
-This data is transmitted to RevenueCat's servers in the <strong>United States</strong> under
-a data processing agreement, and is used for subscription validation, restoration and fraud
-prevention. RevenueCat does not receive any of your personal financial data entered
-into CanFIRE — your plans, logs, assets, insurance details, and CPF figures never leave your device.
+RevenueCat does not receive your financial data or any personal information entered into the
+app — your income, expenses, assets, and insurance details never leave your device.
 </p>
 <p>
-For details on RevenueCat's data practices, see their
-<a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>.
+RevenueCat is headquartered in the <strong>United States</strong>, and data it processes is
+transferred to and stored there. CanFIRE takes reasonable steps to ensure this data is
+protected through RevenueCat's standard data processing agreements. For details on their
+practices, see the
+<a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a>.
 </p>
 
 <h3>Apple and Google</h3>
@@ -219,32 +228,41 @@ For details on RevenueCat's data practices, see their
 In-app purchases are processed by Apple (iOS) or Google (Android). Apple and Google act as
 <strong>independent controllers</strong> of your purchase and payment information under their
 own privacy policies — they do not process it on our behalf. For any subscription or payment
-data enquiry, please contact Apple or Google directly through your device's account settings.
-</p>
-
-<h3>GitHub</h3>
-<p>
-The weekly CPF reference file is served from GitHub, as described above. GitHub receives only
-your device's IP address as an incident of serving the file, and acts as an independent
-controller of that information.
+data enquiry, contact Apple or Google directly through your device's app store.
 </p>
 </div>
 
-<!-- Notifications -->
 <div class="card">
 <div class="card-header">
 <span class="icon">🔔</span>
 <h2>Notifications</h2>
 </div>
 <p>
-If you enable reminders in Settings, CanFIRE schedules local notifications on your
-device. These are generated entirely on-device — no notification tokens or device
-identifiers are sent to any server. You can disable notifications at any time in
-Settings or in your device's system settings.
+CanFIRE uses <strong>local notifications only</strong> — reminders are scheduled and delivered
+entirely on your device. No push token is created, stored, or transmitted to Apple, Google, or
+anyone else. You can disable reminders at any time in Settings or in your device's system
+settings.
 </p>
 </div>
 
-<!-- Disclaimers -->
+<div class="card">
+<div class="card-header">
+<span class="icon">🗑️</span>
+<h2>Data Retention &amp; Deletion</h2>
+</div>
+<p>
+Financial data you enter is stored locally on your device and retained until you delete it
+within the app or uninstall CanFIRE. We do not retain copies of this data. Reminder schedules
+are stored locally and removed when you disable notifications. Encrypted backup files you
+export are under your control — delete them from wherever you stored them.
+</p>
+<p>
+Subscription and payment data is processed by Apple, Google, and RevenueCat, and retained in
+accordance with their respective policies. For subscription data enquiries or deletion
+requests, contact them directly, or email us and we will assist.
+</p>
+</div>
+
 <div class="card">
 <div class="card-header">
 <span class="icon">⚖️</span>
@@ -253,85 +271,51 @@ Settings or in your device's system settings.
 
 <h3>Not Financial Advice</h3>
 <p>
-CanFIRE is a personal retirement planning calculator. It is <strong>not a licensed
-financial adviser</strong>, and nothing in this app constitutes financial advice,
-investment advice, or any form of regulated financial advisory service under the
-Financial Advisers Act 2001 or the Securities and Futures Act 2001 of Singapore.
-CanFIRE is not licensed or regulated by the Monetary Authority of Singapore.
+CanFIRE is a personal retirement planning calculator. It is <strong>not a financial
+adviser</strong>, and nothing in this app constitutes financial advice, investment advice, or
+any form of regulated financial advisory service under the
+<strong>Financial Advisers Act 2001</strong> or the <strong>Securities and Futures Act
+2001</strong> of Singapore. CanFIRE is not licensed or regulated by the Monetary Authority of
+Singapore.
 </p>
 <p>
-All projections, estimates, and insights are based solely on the information you enter.
-They are for your own planning reference only. You should not make any financial decision
-based solely on outputs from this app. For personalised advice, consult a qualified financial professional.
+All projections, estimates, and insights are based solely on the information you enter. They
+are for your own planning reference only. You should not make any financial decision based
+solely on outputs from this app. For personalised financial, investment, or retirement advice,
+please consult a qualified financial professional.
 </p>
 
 <h3>CPF &amp; Government Data</h3>
 <p>
-Retirement sums (BRS/FRS/ERS) are taken from publicly published CPF Board figures and
-updated periodically. CPF LIFE payout figures shown in the app are CanFIRE's own estimate
-derived from CPF Board's published Standard Plan ranges — <strong>they are not CPF Board
-figures</strong>. All figures are for planning purposes only and may not reflect your actual
-CPF balances or entitlements. Please refer to <a href="https://www.cpf.gov.sg" target="_blank" rel="noopener">cpf.gov.sg</a>
-or your CPF statement for authoritative figures.
+Retirement sums (BRS / FRS / ERS) are taken from publicly published CPF Board figures and
+reviewed each January. <strong>CPF LIFE payout figures shown in the app are CanFIRE's own
+estimate</strong>, interpolated from CPF Board's published Standard Plan ranges — they are not
+CPF Board figures. All figures are for planning purposes only and may not reflect your actual
+CPF balances or entitlements. Please refer to
+<a href="https://www.cpf.gov.sg" target="_blank" rel="noopener">cpf.gov.sg</a> or your CPF
+statement for authoritative figures.
 </p>
 <p>
-CPF reference figures are reviewed each January, following CPF Board's annual announcements.
-This app references publicly available CPF Board figures solely for planning purposes.
-It does not access, connect to, or retrieve data from your CPF account or any CPF
-Board systems.
+This app references publicly available CPF Board figures solely for planning purposes. It does
+not access, connect to, or retrieve data from your CPF account or any CPF Board systems.
 </p>
 
 <h3>Projections &amp; Estimates</h3>
 <p>
-All financial projections are mathematical estimates based on your inputs and assumed
-growth rates. Past performance of any asset class does not guarantee future returns.
-Actual outcomes will differ from projections due to market conditions, inflation, policy
-changes, and personal circumstances.
+All financial projections are mathematical estimates based on your inputs and assumed growth
+rates. Past performance of any asset class does not guarantee future returns. Actual outcomes
+will differ from projections due to market conditions, inflation, policy changes, and personal
+circumstances.
 </p>
 
 <h3>No Affiliation</h3>
 <p>
-CanFIRE is an independent tool and is not affiliated with, endorsed by, or connected to
-CPF Board, the Monetary Authority of Singapore, any government body, financial institution,
+CanFIRE is an independent tool and is not affiliated with, endorsed by, or connected to CPF
+Board, the Monetary Authority of Singapore, any government body, financial institution,
 insurer, or investment product provider.
 </p>
 </div>
 
-<!-- Data retention & deletion -->
-<div class="card">
-<div class="card-header">
-<span class="icon">🗑️</span>
-<h2>Data Retention &amp; Deletion</h2>
-</div>
-<p>
-All CanFIRE data lives only on your device, for as long as the app is installed.
-You can delete individual entries at any time, or remove everything at once with
-<strong>Settings → Clear All Data</strong>. Uninstalling the app also deletes all
-locally stored data. Encrypted <code>.canfire</code> backup files you export are
-under your control — delete them from wherever you stored them.
-</p>
-<p>
-Subscription records held by Apple, Google, and RevenueCat are retained under their own
-policies. Because Apple and Google are independent controllers of that data, requests about
-it should be made to them directly; we can assist with RevenueCat records where you can
-supply an identifier.
-</p>
-</div>
-
-<!-- Changes -->
-<div class="card">
-<div class="card-header">
-<span class="icon">🔁</span>
-<h2>Changes to This Policy</h2>
-</div>
-<p>
-We may update this policy from time to time. The current version is always available at this
-address, and the "Last updated" date below will change. Where a change materially affects how
-your data is handled, we will highlight it in the app.
-</p>
-</div>
-
-<!-- Contact -->
 <div class="card">
 <div class="card-header">
 <span class="icon">✉️</span>
@@ -341,9 +325,17 @@ your data is handled, we will highlight it in the app.
 For questions about this privacy policy or any personal-data enquiry, contact:
 <strong><a href="mailto:hello@canfire.app">hello@canfire.app</a></strong>
 </p>
+</div>
+
+<div class="card">
+<div class="card-header">
+<span class="icon">🔁</span>
+<h2>Changes to This Policy</h2>
+</div>
 <p>
-CanFIRE and NestFIRE are both published by Tong Wee Seng (DS-Lab); this address is the
-contact point for both.
+We may update this policy from time to time. The current version is always available at this
+address, and the date below changes when we do. Where a change materially affects how your
+data is handled, we will highlight it in the app.
 </p>
 </div>
 
